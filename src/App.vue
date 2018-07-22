@@ -125,7 +125,9 @@ export default {
   methods: {
     formatStartDate(date) {
       var obj = new Date(date);
-      obj.setTime( obj.getTime() - new Date().getTimezoneOffset()*60*1000 );
+      //console.log(obj)
+      //obj.setTime( obj.getTime() - new Date().getTimezoneOffset()*60*1000 );
+      //console.log(obj)
       return (
         obj.toDateString().substring(0, 3) +
         " " +
@@ -136,7 +138,7 @@ export default {
     },
     formatEndDate(date) {
       var obj = new Date(date);
-      obj.setTime( obj.getTime() - new Date().getTimezoneOffset()*60*1000 );
+      //obj.setTime( obj.getTime() + new Date().getTimezoneOffset()*60*1000 );
       return obj.toLocaleTimeString("en-US").length < 11
         ? obj.toLocaleTimeString("en-US").substring(0, 4)
         : obj.toLocaleTimeString("en-US").substring(0, 5);
@@ -160,7 +162,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; // http://localhost:8080/
+      const redirectUri = "https://namanagar.github.io/festival-recs/"; //  http://localhost:8080/
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
