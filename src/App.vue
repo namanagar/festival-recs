@@ -23,7 +23,6 @@
       <div class="col-sm-12">
           <small class="center">Check back for more festivals - Gov Ball, Coachella, Bonnaroo, etc.!</small>
       </div>
-      <button @click="generate()">generate</button>
     </div>
     <div  v-if="this.user == null" class="row extra-padded">
       <div class="col-sm-12">
@@ -36,6 +35,7 @@
             <div class="card-body">
               <h5 class="card-title">{{user.display_name}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
+              <button class="btn btn-success" @click="generate()">Analyze</button>
             </div>
           </div>
       </div>
