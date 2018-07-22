@@ -1,0 +1,957 @@
+[
+  {
+    "artist": "Rebelution",
+    "startTime": "2018-08-02T17:00:00-06:00",
+    "endTime": "2018-08-02T18:00:00-06:00"
+  },
+  {
+    "artist": "KHALID",
+    "startTime": "2018-08-02T19:00:00-06:00",
+    "endTime": "2018-08-02T20:00:00-06:00"
+  },
+  {
+    "artist": "Terror Jr",
+    "startTime": "2018-08-02T15:00:00-06:00",
+    "endTime": "2018-08-02T16:00:00-06:00"
+  },
+  {
+    "artist": "Cuco",
+    "startTime": "2018-08-02T13:15:00-06:00",
+    "endTime": "2018-08-02T14:00:00-06:00"
+  },
+  {
+    "artist": "TRAVIS SCOTT",
+    "startTime": "2018-08-02T20:45:00-06:00",
+    "endTime": "2018-08-02T22:00:00-06:00"
+  },
+  {
+    "artist": "Nick Mulvey",
+    "startTime": "2018-08-02T12:30:00-06:00",
+    "endTime": "2018-08-02T13:15:00-06:00"
+  },
+  {
+    "artist": "Virgil Abloh",
+    "startTime": "2018-08-02T20:00:00-06:00",
+    "endTime": "2018-08-02T20:45:00-06:00"
+  },
+  {
+    "artist": "BILLIE EILISH",
+    "startTime": "2018-08-02T18:00:00-06:00",
+    "endTime": "2018-08-02T19:00:00-06:00"
+  },
+  {
+    "artist": "Basement",
+    "startTime": "2018-08-02T14:00:00-06:00",
+    "endTime": "2018-08-02T15:00:00-06:00"
+  },
+  {
+    "artist": "All Time Low",
+    "startTime": "2018-08-02T16:00:00-06:00",
+    "endTime": "2018-08-02T17:00:00-06:00"
+  },
+  {
+    "artist": "Valee",
+    "startTime": "2018-08-02T12:50:00-06:00",
+    "endTime": "2018-08-02T13:30:00-06:00"
+  },
+  {
+    "artist": "G Herbo",
+    "startTime": "2018-08-02T16:00:00-06:00",
+    "endTime": "2018-08-02T16:45:00-06:00"
+  },
+  {
+    "artist": "A Boogie Wit Da Hoodie",
+    "startTime": "2018-08-02T19:45:00-06:00",
+    "endTime": "2018-08-02T20:30:00-06:00"
+  },
+  {
+    "artist": "DJ Taye",
+    "startTime": "2018-08-02T12:00:00-06:00",
+    "endTime": "2018-08-02T12:30:00-06:00"
+  },
+  {
+    "artist": "Jaden Smith",
+    "startTime": "2018-08-02T17:15:00-06:00",
+    "endTime": "2018-08-02T18:00:00-06:00"
+  },
+  {
+    "artist": "Tycho",
+    "startTime": "2018-08-02T21:00:00-06:00",
+    "endTime": "2018-08-02T22:00:00-06:00"
+  },
+  {
+    "artist": "Curtis Harding",
+    "startTime": "2018-08-02T14:50:00-06:00",
+    "endTime": "2018-08-02T15:30:00-06:00"
+  },
+  {
+    "artist": "Petit Biscuit",
+    "startTime": "2018-08-02T18:30:00-06:00",
+    "endTime": "2018-08-02T19:15:00-06:00"
+  },
+  {
+    "artist": "Allie X",
+    "startTime": "2018-08-02T13:50:00-06:00",
+    "endTime": "2018-08-02T14:30:00-06:00"
+  },
+  {
+    "artist": "Supa Bwe",
+    "startTime": "2018-08-02T17:40:00-06:00",
+    "endTime": "2018-08-02T18:20:00-06:00"
+  },
+  {
+    "artist": "Larkin Poe",
+    "startTime": "2018-08-02T13:00:00-06:00",
+    "endTime": "2018-08-02T13:40:00-06:00"
+  },
+  {
+    "artist": "GASHI",
+    "startTime": "2018-08-02T16:30:00-06:00",
+    "endTime": "2018-08-02T17:10:00-06:00"
+  },
+  {
+    "artist": "Wes Period",
+    "startTime": "2018-08-02T14:10:00-06:00",
+    "endTime": "2018-08-02T14:50:00-06:00"
+  },
+  {
+    "artist": "FLETCHER",
+    "startTime": "2018-08-02T15:20:00-06:00",
+    "endTime": "2018-08-02T16:00:00-06:00"
+  },
+  {
+    "artist": "Madison Beer",
+    "startTime": "2018-08-02T18:50:00-06:00",
+    "endTime": "2018-08-02T19:30:00-06:00"
+  },
+  {
+    "artist": "Galantis",
+    "startTime": "2018-08-02T20:30:00-06:00",
+    "endTime": "2018-08-02T21:45:00-06:00"
+  },
+  {
+    "artist": "Space Jesus",
+    "startTime": "2018-08-02T13:00:00-06:00",
+    "endTime": "2018-08-02T14:00:00-06:00"
+  },
+  {
+    "artist": "4B",
+    "startTime": "2018-08-02T14:15:00-06:00",
+    "endTime": "2018-08-02T15:15:00-06:00"
+  },
+  {
+    "artist": "LZRD",
+    "startTime": "2018-08-02T12:00:00-06:00",
+    "endTime": "2018-08-02T12:45:00-06:00"
+  },
+  {
+    "artist": "REZZ",
+    "startTime": "2018-08-02T19:15:00-06:00",
+    "endTime": "2018-08-02T20:15:00-06:00"
+  },
+  {
+    "artist": "London On Da Track",
+    "startTime": "2018-08-02T15:30:00-06:00",
+    "endTime": "2018-08-02T16:30:00-06:00"
+  },
+  {
+    "artist": "Shiba San",
+    "startTime": "2018-08-02T16:45:00-06:00",
+    "endTime": "2018-08-02T17:45:00-06:00"
+  },
+  {
+    "artist": "KAYZO",
+    "startTime": "2018-08-02T18:00:00-06:00",
+    "endTime": "2018-08-02T19:00:00-06:00"
+  },
+  {
+    "artist": "School of Rock AllStars",
+    "startTime": "2018-08-02T13:30:00-06:00",
+    "endTime": "2018-08-02T14:00:00-06:00"
+  },
+  {
+    "artist": "Mister G",
+    "startTime": "2018-08-02T15:00:00-06:00",
+    "endTime": "2018-08-02T15:30:00-06:00"
+  },
+  {
+    "artist": "Lucy Kalantari & the Jazz Cats",
+    "startTime": "2018-08-02T12:00:00-06:00",
+    "endTime": "2018-08-02T12:30:00-06:00"
+  },
+  {
+    "artist": "Alphabet Rockers",
+    "startTime": "2018-08-02T17:00:00-06:00",
+    "endTime": "2018-08-02T17:30:00-06:00"
+  },
+  {
+    "artist": "Camila Cabello",
+    "startTime": "2018-08-02T19:45:00-06:00",
+    "endTime": "2018-08-02T20:45:00-06:00"
+  },
+  {
+    "artist": "Tyler Childers",
+    "startTime": "2018-08-02T13:45:00-06:00",
+    "endTime": "2018-08-02T14:45:00-06:00"
+  },
+  {
+    "artist": "LANY",
+    "startTime": "2018-08-02T17:45:00-06:00",
+    "endTime": "2018-08-02T18:45:00-06:00"
+  },
+  {
+    "artist": "Jesse Baez",
+    "startTime": "2018-08-02T12:00:00-06:00",
+    "endTime": "2018-08-02T12:45:00-06:00"
+  },
+  {
+    "artist": "The Wombats",
+    "startTime": "2018-08-02T15:45:00-06:00",
+    "endTime": "2018-08-02T16:45:00-06:00"
+  },
+  {
+    "artist": "Franz Ferdinand",
+    "startTime": "2018-08-02T16:45:00-06:00",
+    "endTime": "2018-08-02T17:45:00-06:00"
+  },
+  {
+    "artist": "Arctic Monkeys",
+    "startTime": "2018-08-02T20:45:00-06:00",
+    "endTime": "2018-08-02T22:00:00-06:00"
+  },
+  {
+    "artist": "Stars",
+    "startTime": "2018-08-02T14:45:00-06:00",
+    "endTime": "2018-08-02T15:45:00-06:00"
+  },
+  {
+    "artist": "Slaves (UK)",
+    "startTime": "2018-08-02T12:45:00-06:00",
+    "endTime": "2018-08-02T13:45:00-06:00"
+  },
+  {
+    "artist": "CHVRCHES",
+    "startTime": "2018-08-02T18:45:00-06:00",
+    "endTime": "2018-08-02T19:45:00-06:00"
+  },
+  {
+    "artist": "The National",
+    "startTime": "2018-08-03T20:30:00-06:00",
+    "endTime": "2018-08-03T22:00:00-06:00"
+  },
+  {
+    "artist": "Parquet Courts",
+    "startTime": "2018-08-03T14:45:00-06:00",
+    "endTime": "2018-08-03T15:45:00-06:00"
+  },
+  {
+    "artist": "Welshly Arms",
+    "startTime": "2018-08-03T12:45:00-06:00",
+    "endTime": "2018-08-03T13:45:00-06:00"
+  },
+  {
+    "artist": "James Bay",
+    "startTime": "2018-08-03T16:45:00-06:00",
+    "endTime": "2018-08-03T17:45:00-06:00"
+  },
+  {
+    "artist": "Post Malone",
+    "startTime": "2018-08-03T18:45:00-06:00",
+    "endTime": "2018-08-03T19:45:00-06:00"
+  },
+  {
+    "artist": "Oshi",
+    "startTime": "2018-08-03T19:45:00-06:00",
+    "endTime": "2018-08-03T20:30:00-06:00"
+  },
+  {
+    "artist": "The Neighbourhood",
+    "startTime": "2018-08-03T17:45:00-06:00",
+    "endTime": "2018-08-03T18:45:00-06:00"
+  },
+  {
+    "artist": "Matt Maeson",
+    "startTime": "2018-08-03T12:00:00-06:00",
+    "endTime": "2018-08-03T12:45:00-06:00"
+  },
+  {
+    "artist": "Gang Of Youths",
+    "startTime": "2018-08-03T13:45:00-06:00",
+    "endTime": "2018-08-03T14:45:00-06:00"
+  },
+  {
+    "artist": "LIZZO",
+    "startTime": "2018-08-03T15:45:00-06:00",
+    "endTime": "2018-08-03T16:45:00-06:00"
+  },
+  {
+    "artist": "Two Feet",
+    "startTime": "2018-08-03T14:50:00-06:00",
+    "endTime": "2018-08-03T15:30:00-06:00"
+  },
+  {
+    "artist": "cleopatrick",
+    "startTime": "2018-08-03T12:00:00-06:00",
+    "endTime": "2018-08-03T12:30:00-06:00"
+  },
+  {
+    "artist": "Lauv",
+    "startTime": "2018-08-03T16:00:00-06:00",
+    "endTime": "2018-08-03T16:45:00-06:00"
+  },
+  {
+    "artist": "GRETA VAN FLEET",
+    "startTime": "2018-08-03T18:30:00-06:00",
+    "endTime": "2018-08-03T19:15:00-06:00"
+  },
+  {
+    "artist": "BROCKHAMPTON",
+    "startTime": "2018-08-03T19:45:00-06:00",
+    "endTime": "2018-08-03T20:30:00-06:00"
+  },
+  {
+    "artist": "Jungle",
+    "startTime": "2018-08-03T21:00:00-06:00",
+    "endTime": "2018-08-03T22:00:00-06:00"
+  },
+  {
+    "artist": "Big Wild",
+    "startTime": "2018-08-03T17:15:00-06:00",
+    "endTime": "2018-08-03T18:00:00-06:00"
+  },
+  {
+    "artist": "Clairo",
+    "startTime": "2018-08-03T12:50:00-06:00",
+    "endTime": "2018-08-03T13:30:00-06:00"
+  },
+  {
+    "artist": "Post Animal",
+    "startTime": "2018-08-03T13:50:00-06:00",
+    "endTime": "2018-08-03T14:30:00-06:00"
+  },
+  {
+    "artist": "CKY",
+    "startTime": "2018-08-03T15:20:00-06:00",
+    "endTime": "2018-08-03T16:00:00-06:00"
+  },
+  {
+    "artist": "Chase Atlantic",
+    "startTime": "2018-08-03T16:30:00-06:00",
+    "endTime": "2018-08-03T17:10:00-06:00"
+  },
+  {
+    "artist": "Mainland",
+    "startTime": "2018-08-03T13:00:00-06:00",
+    "endTime": "2018-08-03T13:40:00-06:00"
+  },
+  {
+    "artist": "R.LUM.R",
+    "startTime": "2018-08-03T18:50:00-06:00",
+    "endTime": "2018-08-03T19:30:00-06:00"
+  },
+  {
+    "artist": "Buddy",
+    "startTime": "2018-08-03T17:40:00-06:00",
+    "endTime": "2018-08-03T18:20:00-06:00"
+  },
+  {
+    "artist": "nothing,nowhere.",
+    "startTime": "2018-08-03T14:10:00-06:00",
+    "endTime": "2018-08-03T14:50:00-06:00"
+  },
+  {
+    "artist": "Taylor Bennett",
+    "startTime": "2018-08-03T14:30:00-06:00",
+    "endTime": "2018-08-03T15:15:00-06:00"
+  },
+  {
+    "artist": "Goldfish",
+    "startTime": "2018-08-03T13:30:00-06:00",
+    "endTime": "2018-08-03T14:15:00-06:00"
+  },
+  {
+    "artist": "Dillon Francis",
+    "startTime": "2018-08-03T20:30:00-06:00",
+    "endTime": "2018-08-03T21:45:00-06:00"
+  },
+  {
+    "artist": "Valentino Khan",
+    "startTime": "2018-08-03T15:30:00-06:00",
+    "endTime": "2018-08-03T16:30:00-06:00"
+  },
+  {
+    "artist": "Noizu",
+    "startTime": "2018-08-03T12:00:00-06:00",
+    "endTime": "2018-08-03T12:35:00-06:00"
+  },
+  {
+    "artist": "Malaa",
+    "startTime": "2018-08-03T19:15:00-06:00",
+    "endTime": "2018-08-03T20:15:00-06:00"
+  },
+  {
+    "artist": "Rusko",
+    "startTime": "2018-08-03T18:00:00-06:00",
+    "endTime": "2018-08-03T19:00:00-06:00"
+  },
+  {
+    "artist": "KUURO",
+    "startTime": "2018-08-03T12:40:00-06:00",
+    "endTime": "2018-08-03T13:20:00-06:00"
+  },
+  {
+    "artist": "Alan Walker",
+    "startTime": "2018-08-03T16:45:00-06:00",
+    "endTime": "2018-08-03T17:45:00-06:00"
+  },
+  {
+    "artist": "Lucy Kalantari & the Jazz Cats",
+    "startTime": "2018-08-03T13:30:00-06:00",
+    "endTime": "2018-08-03T14:00:00-06:00"
+  },
+  {
+    "artist": "Aaron Nigel Smith",
+    "startTime": "2018-08-03T12:00:00-06:00",
+    "endTime": "2018-08-03T12:30:00-06:00"
+  },
+  {
+    "artist": "Alphabet Rockers",
+    "startTime": "2018-08-03T15:00:00-06:00",
+    "endTime": "2018-08-03T15:30:00-06:00"
+  },
+  {
+    "artist": "Mister G",
+    "startTime": "2018-08-03T17:00:00-06:00",
+    "endTime": "2018-08-03T17:30:00-06:00"
+  },
+  {
+    "artist": "BØRNS",
+    "startTime": "2018-08-03T19:30:00-06:00",
+    "endTime": "2018-08-03T20:30:00-06:00"
+  },
+  {
+    "artist": "Alina Baraz",
+    "startTime": "2018-08-03T17:30:00-06:00",
+    "endTime": "2018-08-03T18:30:00-06:00"
+  },
+  {
+    "artist": "Bebe Rexha",
+    "startTime": "2018-08-03T15:30:00-06:00",
+    "endTime": "2018-08-03T16:30:00-06:00"
+  },
+  {
+    "artist": "Lewis Capaldi",
+    "startTime": "2018-08-03T13:45:00-06:00",
+    "endTime": "2018-08-03T14:30:00-06:00"
+  },
+  {
+    "artist": "Dream Wife",
+    "startTime": "2018-08-03T12:15:00-06:00",
+    "endTime": "2018-08-03T13:00:00-06:00"
+  },
+  {
+    "artist": "TYLER, THE CREATOR",
+    "startTime": "2018-08-03T16:30:00-06:00",
+    "endTime": "2018-08-03T17:30:00-06:00"
+  },
+  {
+    "artist": "Alex Lahey",
+    "startTime": "2018-08-03T13:00:00-06:00",
+    "endTime": "2018-08-03T13:45:00-06:00"
+  },
+  {
+    "artist": "WALK THE MOON",
+    "startTime": "2018-08-03T18:30:00-06:00",
+    "endTime": "2018-08-03T19:30:00-06:00"
+  },
+  {
+    "artist": "Dermot Kennedy",
+    "startTime": "2018-08-03T14:30:00-06:00",
+    "endTime": "2018-08-03T15:30:00-06:00"
+  },
+  {
+    "artist": "BRUNO MARS",
+    "startTime": "2018-08-03T20:30:00-06:00",
+    "endTime": "2018-08-03T22:00:00-06:00"
+  },
+  {
+    "artist": "Vampire Weekend",
+    "startTime": "2018-08-04T20:30:00-06:00",
+    "endTime": "2018-08-04T22:00:00-06:00"
+  },
+  {
+    "artist": "St. Vincent",
+    "startTime": "2018-08-04T18:45:00-06:00",
+    "endTime": "2018-08-04T19:45:00-06:00"
+  },
+  {
+    "artist": "Yungblud",
+    "startTime": "2018-08-04T13:00:00-06:00",
+    "endTime": "2018-08-04T13:45:00-06:00"
+  },
+  {
+    "artist": "LL COOL J",
+    "startTime": "2018-08-04T16:45:00-06:00",
+    "endTime": "2018-08-04T17:45:00-06:00"
+  },
+  {
+    "artist": "A R I Z O N A",
+    "startTime": "2018-08-04T14:45:00-06:00",
+    "endTime": "2018-08-04T15:45:00-06:00"
+  },
+  {
+    "artist": "Lil Pump",
+    "startTime": "2018-08-04T15:45:00-06:00",
+    "endTime": "2018-08-04T16:45:00-06:00"
+  },
+  {
+    "artist": "DROELOE",
+    "startTime": "2018-08-04T19:45:00-06:00",
+    "endTime": "2018-08-04T20:30:00-06:00"
+  },
+  {
+    "artist": "Luke Combs",
+    "startTime": "2018-08-04T17:45:00-06:00",
+    "endTime": "2018-08-04T18:45:00-06:00"
+  },
+  {
+    "artist": "Tank and The Bangas",
+    "startTime": "2018-08-04T13:45:00-06:00",
+    "endTime": "2018-08-04T14:45:00-06:00"
+  },
+  {
+    "artist": "Wallows",
+    "startTime": "2018-08-04T12:15:00-06:00",
+    "endTime": "2018-08-04T13:00:00-06:00"
+  },
+  {
+    "artist": "Tash Sultana",
+    "startTime": "2018-08-04T19:45:00-06:00",
+    "endTime": "2018-08-04T20:30:00-06:00"
+  },
+  {
+    "artist": "Pale Waves",
+    "startTime": "2018-08-04T14:50:00-06:00",
+    "endTime": "2018-08-04T15:30:00-06:00"
+  },
+  {
+    "artist": "Amy Shark",
+    "startTime": "2018-08-04T13:50:00-06:00",
+    "endTime": "2018-08-04T14:30:00-06:00"
+  },
+  {
+    "artist": "Femdot",
+    "startTime": "2018-08-04T12:50:00-06:00",
+    "endTime": "2018-08-04T13:30:00-06:00"
+  },
+  {
+    "artist": "Autograf",
+    "startTime": "2018-08-04T16:00:00-06:00",
+    "endTime": "2018-08-04T16:45:00-06:00"
+  },
+  {
+    "artist": "GOLDLINK",
+    "startTime": "2018-08-04T17:15:00-06:00",
+    "endTime": "2018-08-04T18:00:00-06:00"
+  },
+  {
+    "artist": "Daniel Caesar",
+    "startTime": "2018-08-04T18:30:00-06:00",
+    "endTime": "2018-08-04T19:15:00-06:00"
+  },
+  {
+    "artist": "Emilia Ali",
+    "startTime": "2018-08-04T12:00:00-06:00",
+    "endTime": "2018-08-04T12:30:00-06:00"
+  },
+  {
+    "artist": "blackbear",
+    "startTime": "2018-08-04T21:00:00-06:00",
+    "endTime": "2018-08-04T22:00:00-06:00"
+  },
+  {
+    "artist": "Davie",
+    "startTime": "2018-08-04T14:10:00-06:00",
+    "endTime": "2018-08-04T14:50:00-06:00"
+  },
+  {
+    "artist": "GRACE WEBER",
+    "startTime": "2018-08-04T13:00:00-06:00",
+    "endTime": "2018-08-04T13:40:00-06:00"
+  },
+  {
+    "artist": "MELVV",
+    "startTime": "2018-08-04T16:30:00-06:00",
+    "endTime": "2018-08-04T17:10:00-06:00"
+  },
+  {
+    "artist": "BONES (UK)",
+    "startTime": "2018-08-04T15:20:00-06:00",
+    "endTime": "2018-08-04T16:00:00-06:00"
+  },
+  {
+    "artist": "morgxn",
+    "startTime": "2018-08-04T17:40:00-06:00",
+    "endTime": "2018-08-04T18:20:00-06:00"
+  },
+  {
+    "artist": "Vera Blue",
+    "startTime": "2018-08-04T18:50:00-06:00",
+    "endTime": "2018-08-04T19:30:00-06:00"
+  },
+  {
+    "artist": "Hippie Sabotage",
+    "startTime": "2018-08-04T15:30:00-06:00",
+    "endTime": "2018-08-04T16:30:00-06:00"
+  },
+  {
+    "artist": "ILLENIUM",
+    "startTime": "2018-08-04T19:15:00-06:00",
+    "endTime": "2018-08-04T20:15:00-06:00"
+  },
+  {
+    "artist": "Ghastly",
+    "startTime": "2018-08-04T16:45:00-06:00",
+    "endTime": "2018-08-04T17:45:00-06:00"
+  },
+  {
+    "artist": "BROHUG",
+    "startTime": "2018-08-04T12:35:00-06:00",
+    "endTime": "2018-08-04T13:15:00-06:00"
+  },
+  {
+    "artist": "ZEDD",
+    "startTime": "2018-08-04T20:30:00-06:00",
+    "endTime": "2018-08-04T21:45:00-06:00"
+  },
+  {
+    "artist": "LOUDPVCK",
+    "startTime": "2018-08-04T13:30:00-06:00",
+    "endTime": "2018-08-04T14:15:00-06:00"
+  },
+  {
+    "artist": "Zomboy",
+    "startTime": "2018-08-04T18:00:00-06:00",
+    "endTime": "2018-08-04T19:00:00-06:00"
+  },
+  {
+    "artist": "BlackGummy",
+    "startTime": "2018-08-04T12:00:00-06:00",
+    "endTime": "2018-08-04T12:30:00-06:00"
+  },
+  {
+    "artist": "K?D",
+    "startTime": "2018-08-04T14:30:00-06:00",
+    "endTime": "2018-08-04T15:15:00-06:00"
+  },
+  {
+    "artist": "School of Rock AllStars",
+    "startTime": "2018-08-04T13:30:00-06:00",
+    "endTime": "2018-08-04T14:00:00-06:00"
+  },
+  {
+    "artist": "Q Brothers",
+    "startTime": "2018-08-04T15:00:00-06:00",
+    "endTime": "2018-08-04T15:30:00-06:00"
+  },
+  {
+    "artist": "kb Whirly",
+    "startTime": "2018-08-04T17:00:00-06:00",
+    "endTime": "2018-08-04T17:30:00-06:00"
+  },
+  {
+    "artist": "Jessie Ware",
+    "startTime": "2018-08-04T17:30:00-06:00",
+    "endTime": "2018-08-04T18:30:00-06:00"
+  },
+  {
+    "artist": "Carly Rae Jepsen",
+    "startTime": "2018-08-04T17:30:00-06:00",
+    "endTime": "2018-08-04T18:30:00-06:00"
+  },
+  {
+    "artist": "Sir Sly",
+    "startTime": "2018-08-04T13:30:00-06:00",
+    "endTime": "2018-08-04T14:15:00-06:00"
+  },
+  {
+    "artist": "lovelytheband",
+    "startTime": "2018-08-04T12:00:00-06:00",
+    "endTime": "2018-08-04T12:45:00-06:00"
+  },
+  {
+    "artist": "Dua Lipa",
+    "startTime": "2018-08-04T19:30:00-06:00",
+    "endTime": "2018-08-04T20:30:00-06:00"
+  },
+  {
+    "artist": "Daya",
+    "startTime": "2018-08-04T15:30:00-06:00",
+    "endTime": "2018-08-04T16:30:00-06:00"
+  },
+  {
+    "artist": "Catfish and the Bottlemen",
+    "startTime": "2018-08-04T16:30:00-06:00",
+    "endTime": "2018-08-04T17:30:00-06:00"
+  },
+  {
+    "artist": "Logic",
+    "startTime": "2018-08-04T18:30:00-06:00",
+    "endTime": "2018-08-04T19:30:00-06:00"
+  },
+  {
+    "artist": "THE WEEKND",
+    "startTime": "2018-08-04T20:30:00-06:00",
+    "endTime": "2018-08-04T22:00:00-06:00"
+  },
+  {
+    "artist": "Bomba Estéreo",
+    "startTime": "2018-08-04T14:30:00-06:00",
+    "endTime": "2018-08-04T15:30:00-06:00"
+  },
+  {
+    "artist": "Charlotte Cardin",
+    "startTime": "2018-08-04T12:45:00-06:00",
+    "endTime": "2018-08-04T13:30:00-06:00"
+  },
+  {
+    "artist": "Lil Uzi Vert",
+    "startTime": "2018-08-05T19:00:00-06:00",
+    "endTime": "2018-08-05T20:00:00-06:00"
+  },
+  {
+    "artist": "Gucci Mane",
+    "startTime": "2018-08-05T17:00:00-06:00",
+    "endTime": "2018-08-05T18:00:00-06:00"
+  },
+  {
+    "artist": "ODESZA",
+    "startTime": "2018-08-05T20:45:00-06:00",
+    "endTime": "2018-08-05T22:00:00-06:00"
+  },
+  {
+    "artist": "The Coronas",
+    "startTime": "2018-08-05T13:00:00-06:00",
+    "endTime": "2018-08-05T14:00:00-06:00"
+  },
+  {
+    "artist": "The Vaccines",
+    "startTime": "2018-08-05T15:00:00-06:00",
+    "endTime": "2018-08-05T16:00:00-06:00"
+  },
+  {
+    "artist": "Rainbow Kitten Surprise",
+    "startTime": "2018-08-05T16:00:00-06:00",
+    "endTime": "2018-08-05T17:00:00-06:00"
+  },
+  {
+    "artist": "NAV",
+    "startTime": "2018-08-05T18:00:00-06:00",
+    "endTime": "2018-08-05T19:00:00-06:00"
+  },
+  {
+    "artist": "Medasin",
+    "startTime": "2018-08-05T20:00:00-06:00",
+    "endTime": "2018-08-05T20:45:00-06:00"
+  },
+  {
+    "artist": "Frenship",
+    "startTime": "2018-08-05T14:00:00-06:00",
+    "endTime": "2018-08-05T15:00:00-06:00"
+  },
+  {
+    "artist": "Superorganism",
+    "startTime": "2018-08-05T12:15:00-06:00",
+    "endTime": "2018-08-05T13:00:00-06:00"
+  },
+  {
+    "artist": "Jessie Reyez",
+    "startTime": "2018-08-05T14:50:00-06:00",
+    "endTime": "2018-08-05T15:30:00-06:00"
+  },
+  {
+    "artist": "Dorothy",
+    "startTime": "2018-08-05T12:00:00-06:00",
+    "endTime": "2018-08-05T12:30:00-06:00"
+  },
+  {
+    "artist": "Knox Fortune",
+    "startTime": "2018-08-05T16:00:00-06:00",
+    "endTime": "2018-08-05T16:45:00-06:00"
+  },
+  {
+    "artist": "Playboi Carti",
+    "startTime": "2018-08-05T21:00:00-06:00",
+    "endTime": "2018-08-05T22:00:00-06:00"
+  },
+  {
+    "artist": "Sasha Sloan",
+    "startTime": "2018-08-05T12:50:00-06:00",
+    "endTime": "2018-08-05T13:30:00-06:00"
+  },
+  {
+    "artist": "Quinn XCII",
+    "startTime": "2018-08-05T19:45:00-06:00",
+    "endTime": "2018-08-05T20:30:00-06:00"
+  },
+  {
+    "artist": "Sabrina Claudio",
+    "startTime": "2018-08-05T17:15:00-06:00",
+    "endTime": "2018-08-05T18:00:00-06:00"
+  },
+  {
+    "artist": "Rex Orange County",
+    "startTime": "2018-08-05T13:50:00-06:00",
+    "endTime": "2018-08-05T14:30:00-06:00"
+  },
+  {
+    "artist": "Cigarettes After Sex",
+    "startTime": "2018-08-05T18:30:00-06:00",
+    "endTime": "2018-08-05T19:15:00-06:00"
+  },
+  {
+    "artist": "The Aces",
+    "startTime": "2018-08-05T16:30:00-06:00",
+    "endTime": "2018-08-05T17:10:00-06:00"
+  },
+  {
+    "artist": "John Splithoff",
+    "startTime": "2018-08-05T18:50:00-06:00",
+    "endTime": "2018-08-05T19:30:00-06:00"
+  },
+  {
+    "artist": "The Wrecks",
+    "startTime": "2018-08-05T17:40:00-06:00",
+    "endTime": "2018-08-05T18:20:00-06:00"
+  },
+  {
+    "artist": "Mikky Ekko",
+    "startTime": "2018-08-05T15:20:00-06:00",
+    "endTime": "2018-08-05T16:00:00-06:00"
+  },
+  {
+    "artist": "Morgan Saint",
+    "startTime": "2018-08-05T13:00:00-06:00",
+    "endTime": "2018-08-05T13:40:00-06:00"
+  },
+  {
+    "artist": "Van William",
+    "startTime": "2018-08-05T14:10:00-06:00",
+    "endTime": "2018-08-05T14:50:00-06:00"
+  },
+  {
+    "artist": "EKALI",
+    "startTime": "2018-08-05T14:00:00-06:00",
+    "endTime": "2018-08-05T14:45:00-06:00"
+  },
+  {
+    "artist": "BAZZI",
+    "startTime": "2018-08-05T19:45:00-06:00",
+    "endTime": "2018-08-05T20:30:00-06:00"
+  },
+  {
+    "artist": "Herobust",
+    "startTime": "2018-08-05T16:00:00-06:00",
+    "endTime": "2018-08-05T17:00:00-06:00"
+  },
+  {
+    "artist": "The Him",
+    "startTime": "2018-08-05T13:00:00-06:00",
+    "endTime": "2018-08-05T13:45:00-06:00"
+  },
+  {
+    "artist": "Excision",
+    "startTime": "2018-08-05T20:45:00-06:00",
+    "endTime": "2018-08-05T21:45:00-06:00"
+  },
+  {
+    "artist": "Chris Lake",
+    "startTime": "2018-08-05T15:00:00-06:00",
+    "endTime": "2018-08-05T15:45:00-06:00"
+  },
+  {
+    "artist": "What So Not",
+    "startTime": "2018-08-05T18:30:00-06:00",
+    "endTime": "2018-08-05T19:30:00-06:00"
+  },
+  {
+    "artist": "Tim Gunter",
+    "startTime": "2018-08-05T12:00:00-06:00",
+    "endTime": "2018-08-05T12:45:00-06:00"
+  },
+  {
+    "artist": "TroyBoi",
+    "startTime": "2018-08-05T17:15:00-06:00",
+    "endTime": "2018-08-05T18:15:00-06:00"
+  },
+  {
+    "artist": "Q Brothers",
+    "startTime": "2018-08-05T13:30:00-06:00",
+    "endTime": "2018-08-05T14:00:00-06:00"
+  },
+  {
+    "artist": "Justin Roberts & the Not Ready for Naptime Players",
+    "startTime": "2018-08-05T17:00:00-06:00",
+    "endTime": "2018-08-05T17:30:00-06:00"
+  },
+  {
+    "artist": "kb Whirly",
+    "startTime": "2018-08-05T12:00:00-06:00",
+    "endTime": "2018-08-05T12:30:00-06:00"
+  },
+  {
+    "artist": "School of Rock AllStars",
+    "startTime": "2018-08-05T15:00:00-06:00",
+    "endTime": "2018-08-05T15:30:00-06:00"
+  },
+  {
+    "artist": "Chromeo",
+    "startTime": "2018-08-05T19:30:00-06:00",
+    "endTime": "2018-08-05T20:30:00-06:00"
+  },
+  {
+    "artist": "Freya Ridings",
+    "startTime": "2018-08-05T12:00:00-06:00",
+    "endTime": "2018-08-05T12:45:00-06:00"
+  },
+  {
+    "artist": "Manchester Orchestra",
+    "startTime": "2018-08-05T17:30:00-06:00",
+    "endTime": "2018-08-05T18:30:00-06:00"
+  },
+  {
+    "artist": "KALI UCHIS",
+    "startTime": "2018-08-05T15:30:00-06:00",
+    "endTime": "2018-08-05T16:30:00-06:00"
+  },
+  {
+    "artist": "Durand Jones & The Indications",
+    "startTime": "2018-08-05T13:30:00-06:00",
+    "endTime": "2018-08-05T14:30:00-06:00"
+  },
+  {
+    "artist": "The Regrettes",
+    "startTime": "2018-08-05T12:45:00-06:00",
+    "endTime": "2018-08-05T13:30:00-06:00"
+  },
+  {
+    "artist": "Portugal. The Man",
+    "startTime": "2018-08-05T18:30:00-06:00",
+    "endTime": "2018-08-05T19:30:00-06:00"
+  },
+  {
+    "artist": "Anderson East",
+    "startTime": "2018-08-05T14:30:00-06:00",
+    "endTime": "2018-08-05T15:30:00-06:00"
+  },
+  {
+    "artist": "Jack White",
+    "startTime": "2018-08-05T20:30:00-06:00",
+    "endTime": "2018-08-05T22:00:00-06:00"
+  },
+  {
+    "artist": "Lykke Li",
+    "startTime": "2018-08-05T16:30:00-06:00",
+    "endTime": "2018-08-05T17:30:00-06:00"
+  }
+]
