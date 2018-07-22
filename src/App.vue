@@ -44,6 +44,22 @@
           <img src="src/assets/loading.gif"/>
       </div>
     </div>
+    <div v-if="this.user != null && loading == false && guarantees.length > 0">
+      <div class="row extra-padded">
+        <div class="col-sm-12">
+          <h4>Your Must Sees:</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4" v-for="artist in guarantees" :key="artist.id">
+          <div class="card" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">{{artist.name}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -71,13 +87,13 @@ export default {
       fest: "Lollapalooza 2018",
       _token: "",
       user: null,
-      loading: false
+      loading: false,
+      topArtists: [],
+      guarantees: []
     };
   },
-  firebase: function() {
-    return {
+  firebase: {
       festivals: festivalsRef
-    };
   },
   computed: {
     textFeature(){
@@ -86,12 +102,8 @@ export default {
   },
   methods: {
     async login() {
-      /**************
-       *** AUTH *****
-       **************
-       this code is taken (very slightly modified) from https://glitch.com/edit/#!/spotify-implicit-grant?path=README.md:1:0
-       which explains how to follow the spotify implicit grant authorization flow
-      */
+      /* this code is taken (very slightly modified) from https://glitch.com/edit/#!/spotify-implicit-grant?path=README.md:1:0
+       which explains how to follow the spotify implicit grant authorization flow */
       const hash = window.location.hash
         .substring(1)
         .split("&")
@@ -118,6 +130,71 @@ export default {
           "%20"
         )}&response_type=token&show_dialog=true`;
       }
+    },
+    async getTopArtists() {
+        await axios
+          .get(
+            `https://api.spotify.com/v1/me/top/artists?limit=50`,
+            {
+              headers: {
+                Authorization: "Bearer " + this._token
+              }
+            }
+          )
+          .then(
+            response => {
+              response.data.items.forEach(element => {
+                this.topArtists.push({ id: element.id, name: element.name })
+              });
+            },
+            error => {
+              console.log("error: " + error);
+            }
+          );
+    },
+    findGuarantees() {
+      var myFest = this.fest
+      var lineup = '';
+      this.festivals.forEach(fest => {
+        if (fest.name == myFest){
+          lineup = fest.lineup
+        }
+      })
+      var lineupNames = lineup.map(el => el.artist);
+      var matches = this.topArtists.filter(artist => {
+        return lineupNames.includes(artist.name);
+      })
+      return matches;
+    },
+    async getRelatedArtists(artistId){
+      await axios
+          .get(
+            `https://api.spotify.com/v1/artists/${artistId}/related-artists`,
+            {
+              headers: {
+                Authorization: "Bearer " + this._token
+              }
+            }
+          )
+          .then(
+            response => {
+              console.log(response.data)
+              var related = [];
+              response.data.artists.forEach(element => {
+                related.push({ id: element.id, name: element.name });
+              });
+              return related;
+            },
+            error => {
+              console.log("error: " + error);
+            }
+          );
+    },
+    async generate(){
+      this.loading = true;
+      await this.getTopArtists();
+      this.guarantees = this.findGuarantees();
+      this.loading = false;
     }
   },
   created: function(){
@@ -133,7 +210,6 @@ export default {
         }, {});
       this._token = hash.access_token;
       const idk = hash.access_token;
-      var retVal = false;
       axios
         .get("https://api.spotify.com/v1/me", {
           headers: {
@@ -144,14 +220,11 @@ export default {
           response => {
             this.user = response.data;
             this._token = idk;
-            retVal = true;
           },
           error => {
             console.log("error: " + error);
-            retVal = false;
           }
         );
-        return retVal;
   }
 };
 </script>
