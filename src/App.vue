@@ -289,12 +289,14 @@ export default {
         response => {
           this.user = response.data;
           this._token = idk;
-          this.generate();
         },
         error => {
           console.log("error: " + error);
         }
       );
+  },
+  mounted: function(){
+    this.generate();
   }
 };
 </script>
