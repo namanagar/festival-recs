@@ -1,18 +1,5 @@
-# festival-recs
+# Festival Recommender
 
-> Tool to recommend artists to see at a music festival based on Spotify listening history
+Tool to recommend artists to see at a music festival based on Spotify listening history, built at HackChicago while mentoring.
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Uses Vue, Firebase, and the Spotify API. Planning on turning it into a schedule builder/recommender for music festivals but currently just finds artists you should check out at music festivals.
