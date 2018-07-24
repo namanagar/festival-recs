@@ -35,6 +35,7 @@
             <div class="card-body">
               <h5 class="card-title">{{user.display_name}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
+              <button class="btn btn-success" @click="generate()">Analyze!</button>
             </div>
           </div>
       </div>
@@ -289,14 +290,12 @@ export default {
         response => {
           this.user = response.data;
           this._token = idk;
+          this.generate();
         },
         error => {
           console.log("error: " + error);
         }
       );
-  },
-  mounted: function(){
-    this.generate();
   }
 };
 </script>
