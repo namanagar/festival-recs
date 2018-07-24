@@ -35,7 +35,6 @@
             <div class="card-body">
               <h5 class="card-title">{{user.display_name}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
-              <button class="btn btn-success" @click="generate()">Analyze!</button>
             </div>
           </div>
       </div>
@@ -162,7 +161,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; //  http://localhost:8080/
+      const redirectUri = "http://localhost:8080/"; //"https://namanagar.github.io/festival-recs/"; //  "http://localhost:8080/";
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -255,7 +254,7 @@ export default {
         }
       });
       var byCount = this.freqMap.slice(0);
-      byCount.sort(function(a,b) { return a.count - b.count; });
+      byCount.sort(function(a,b) { return b.count - a.count; });
       this.recommendations = byCount;
     },
     async generate() {
@@ -290,6 +289,7 @@ export default {
         response => {
           this.user = response.data;
           this._token = idk;
+          this.generate();
         },
         error => {
           console.log("error: " + error);
