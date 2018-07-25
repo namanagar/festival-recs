@@ -13,7 +13,7 @@
     <div class="row padded">
       <div class="col-sm-12">
         <div class="btn-group btn-group-lg btn-group-toggle" role="group" aria-label="festivals" v-for="myFestival in festivals" :key="myFestival.name">
-          <label class="btn" :class="[(fest == myFestival) ? 'btn-primary' : 'btn-outline-primary']">
+          <label class="btn" :class="[(fest == myFestival.name) ? 'btn-primary' : 'btn-outline-primary']">
             <input type="radio" name="options" id="option1" autocomplete="off" :value="myFestival.name" v-model="fest"> {{ myFestival.name }}
           </label>
         </div>
@@ -62,14 +62,14 @@
         </div>
       </div>
     </div>
-     <div v-if="this.user != null && loading == false && recommendations.length > 0">
+     <div v-if="this.user != null && loading == false && freqMap.length > 0">
       <div class="row extra-padded">
         <div class="col-sm-12">
           <h4>Recommendations:</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4" v-for="artist in recommendations" :key="artist.name">
+        <div class="col-sm-4" v-for="artist in freqMap" :key="artist.name">
           <div class="card" style="width: 100%;">
             <div class="card-body">
               <h5 class="card-title">{{artist.name}}</h5>
@@ -119,7 +119,7 @@ export default {
   },
   computed: {
     textFeature() {
-      return this.fest == "" ? "a music festival" : this.fest;
+      return "a music festival"; // this.fest == "" ? "a music festival" : this.fest; implement this when we have multiple fests
     }
   },
   methods: {
@@ -162,7 +162,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; //  "http://localhost:8080/";
+      const redirectUri = "https://namanagar.github.io/festival-recs/"; //"http://localhost:8080/"; 
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -254,9 +254,7 @@ export default {
           }
         }
       });
-      var byCount = this.freqMap.slice(0);
-      byCount.sort(function(a,b) { return b.count - a.count; });
-      this.recommendations = byCount;
+      this.freqMap.sort(function(a,b) { return b.count - a.count; });
     },
     async generate() {
       this.loading = true;
@@ -316,20 +314,6 @@ h1,
 h2 {
   font-weight: normal;
   font-family: "Signika";
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
 }
 
 .fest-button {
