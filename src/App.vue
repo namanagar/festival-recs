@@ -99,7 +99,8 @@ var config = {
 };
 var db = firebase.initializeApp(config).database();
 var festivalsRef = db.ref("festivals");
-var lineupRef = db.ref("lineupArtists")
+//lineupRef is only used by Naman and Chris while adding new festivals
+var lineupRef = db.ref("lineupArtists");
 export default {
   name: "app",
   data() {
@@ -164,7 +165,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; // "http://localhost:8080/";//
+      const redirectUri = "https://namanagar.github.io/festival-recs/"; //"http://localhost:8080/";
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -259,6 +260,7 @@ export default {
       this.freqMap.sort(function(a,b) { return b.count - a.count; });
     },
     async getLineupIDs(){
+      // This method is only used once per festival while testing to scrape spotify artist IDs into the lineup database
       var myFest = this.fest;
       var lineup = "";
       this.festivals.forEach(fest => {
@@ -269,10 +271,11 @@ export default {
       this.lineupArtists = lineup;
       for (var artist = 0; artist < this.lineupArtists.length; artist++){
         var myArtist = this.lineupArtists[artist].artist;
+        var obj = this.lineupArtists[artist];
         //console.log(myArtist)
         await axios
           .get(
-            `https://api.spotify.com/v1/search/${myArtist}&type=artist&limit=1`,
+            `https://api.spotify.com/v1/search?q=${myArtist}&type=artist&limit=1`,
             {
               headers: {
                 Authorization: "Bearer " + this._token
@@ -282,7 +285,10 @@ export default {
           .then(
             response => {
               console.log(response.data);
-              myArtist.id = response.items[0].id;
+              if (response.data.artists.items.length > 0){
+                //this.lineupArtists[artist].id = response.data.artists.items[0].id;
+                this.$firebaseRefs.lineupArtists.push({artist: this.lineupArtists[artist].artist, startTime: this.lineupArtists[artist].startTime, endTime: this.lineupArtists[artist].endTime, id: response.data.artists.items[0].id})
+              }
             },
             error => {
               console.log("error: " + error);
@@ -297,7 +303,6 @@ export default {
       await this.getRelatedArtists(this.topArtists);
       this.buildMap();
       this.loading = false;
-      this.getLineupIDs();
     }
   },
   created: function() {
