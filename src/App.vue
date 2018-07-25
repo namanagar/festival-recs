@@ -99,6 +99,7 @@ var config = {
 };
 var db = firebase.initializeApp(config).database();
 var festivalsRef = db.ref("festivals");
+var lineupRef = db.ref("lineupArtists")
 export default {
   name: "app",
   data() {
@@ -115,7 +116,8 @@ export default {
     };
   },
   firebase: {
-    festivals: festivalsRef
+    festivals: festivalsRef,
+    lineupArtists: lineupRef
   },
   computed: {
     textFeature() {
@@ -162,7 +164,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; //"http://localhost:8080/"; 
+      const redirectUri = "https://namanagar.github.io/festival-recs/"; // "http://localhost:8080/";//
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -256,6 +258,38 @@ export default {
       });
       this.freqMap.sort(function(a,b) { return b.count - a.count; });
     },
+    async getLineupIDs(){
+      var myFest = this.fest;
+      var lineup = "";
+      this.festivals.forEach(fest => {
+        if (fest.name == myFest) {
+          lineup = fest.lineup;
+        }
+      });
+      this.lineupArtists = lineup;
+      for (var artist = 0; artist < this.lineupArtists.length; artist++){
+        var myArtist = this.lineupArtists[artist].artist;
+        //console.log(myArtist)
+        await axios
+          .get(
+            `https://api.spotify.com/v1/search/${myArtist}&type=artist&limit=1`,
+            {
+              headers: {
+                Authorization: "Bearer " + this._token
+              }
+            }
+          )
+          .then(
+            response => {
+              console.log(response.data);
+              myArtist.id = response.items[0].id;
+            },
+            error => {
+              console.log("error: " + error);
+            }
+          );
+      }
+    },
     async generate() {
       this.loading = true;
       await this.getTopArtists();
@@ -263,6 +297,7 @@ export default {
       await this.getRelatedArtists(this.topArtists);
       this.buildMap();
       this.loading = false;
+      this.getLineupIDs();
     }
   },
   created: function() {
