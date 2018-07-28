@@ -3,10 +3,8 @@
     <div class="row">
       <div class="col-sm-12">
         <h2><span style="color: #fb4f4f">who</span><span style="color: #6cc0e5">2</span><span style="color: #fbc93d">see</span></h2>
-        <p>You're excited to see some of your favorite bands at {{ textFeature }}. But who are you gonna watch earlier in the day 
-          when the lineup is full of names you've never heard of? Your options are to do a ton of research before the festival 
-          to find the artists you do want to see, or just mill around on the day of. This app aims to help with that: we take your Spotify listening history,
-          analyze it, and recommend sets to watch.
+        <p>You're excited to see some of your favorite bands at {{ textFeature }}. But who do you watch earlier in the day when you don't recognize anyone on the lineup? Your options are to do a ton of research before the festival 
+          to find the artists you do want to see, or just walk around and hope for the best. We analyze your Spotify listening history and recommend sets to watch.
         </p>
       </div>
     </div>
@@ -21,38 +19,43 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-          <small class="center">Check back for more festivals - Gov Ball, Coachella, Bonnaroo, etc.!</small>
+          <small class="center">Check back for more festivals or <a href="mailto:na148@duke.edu?Subject=who2see">request one</a></small>
       </div>
     </div>
     <div  v-if="this.user == null" class="row extra-padded">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-12">
           <button class="btn btn-lg btn-success" @click="login()"><i class="fab fa-spotify"/>  Log in with Spotify</button>
       </div>
     </div>
     <div v-if="this.user != null" class="row extra-padded">
-      <div class="col-sm-12">
-          <div class="card" style="width: 100%;">
-            <div class="card-body">
-              <h5 class="card-title">{{user.display_name}}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
-              <button class="btn btn-success" @click="generate()">Analyze!</button>
+      <div class="col-sm-12 col-md-12">
+          <div class="card mx-auto" style="width: 50%;">
+            <div class="row">
+              <div class="card-body col-sm-3 col-md-3">
+                <img id="userImg" :src="this.user.images[0].url"/>
+              </div>
+              <div class="card-body col-sm-9 col-md-9">
+                <h5 class="card-title">{{user.display_name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{user.email}}</h6>
+                <button class="btn btn-success" @click="generate()">Analyze!</button>
+              </div>
             </div>
           </div>
       </div>
     </div>
     <div v-if="this.user != null && loading == true" class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 col-md-12">
           <img src="src/assets/loading.gif"/>
       </div>
     </div>
     <div v-if="this.user != null && loading == false && guarantees.length > 0">
       <div class="row extra-padded">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12">
           <h4>Your Must Sees:</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4" v-for="artist in guarantees" :key="artist.artist">
+        <div class="col-sm-12 col-md-4" v-for="artist in guarantees" :key="artist.artist">
           <div class="card" style="width: 100%;">
             <div class="card-body">
               <h5 class="card-title">{{artist.artist}}</h5>
@@ -64,12 +67,12 @@
     </div>
      <div v-if="this.user != null && loading == false && freqMap.length > 0">
       <div class="row extra-padded">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12">
           <h4>Recommendations:</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4" v-for="artist in freqMap" :key="artist.name">
+        <div class="col-sm-12 col-md-4" v-for="artist in freqMap" :key="artist.name">
           <div class="card" style="width: 100%;">
             <div class="card-body">
               <h5 class="card-title">{{artist.name}}</h5>
@@ -83,9 +86,7 @@
 </template>
 
 <script>
-//import Preferences from "./assets/preferences";
-//import axios to make the http requests to the spotify api
-var spotify = require("spotify-web-api-js");
+//import axios to make the https requests to the spotify api
 var firebase = require("firebase");
 var axios = require("axios");
 // Initialize Firebase
@@ -166,7 +167,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; //"http://localhost:8080/";
+      const redirectUri =  "http://localhost:8080/"; //"https://namanagar.github.io/festival-recs/";
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -408,5 +409,11 @@ h2 {
 }
 .extra-padded {
   margin-top: 3em;
+}
+
+#userImg{
+  max-width: 7.5vw;
+  max-height: 7.5vw;
+  border-radius: 5px;
 }
 </style>
