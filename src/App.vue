@@ -99,8 +99,8 @@ var config = {
 };
 var db = firebase.initializeApp(config).database();
 var festivalsRef = db.ref("festivals");
-//lineupRef is only used by Naman and Chris while adding new festivals
-var lineupRef = db.ref("lineupArtists");
+//lineupRef is only used by Naman while adding new festivals
+//var lineupRef = db.ref("lineupArtists");
 export default {
   name: "app",
   data() {
@@ -113,12 +113,13 @@ export default {
       guarantees: [],
       relatedArtists: [],
       freqMap: [],
-      recommendations: []
+      recommendations: [],
+      possibilities: []
     };
   },
   firebase: {
     festivals: festivalsRef,
-    lineupArtists: lineupRef
+    //lineupArtists: lineupRef
   },
   computed: {
     textFeature() {
@@ -165,7 +166,7 @@ export default {
       const authEndpoint = "https://accounts.spotify.com/authorize";
       // Replace with your app's client ID, redirect URI and desired scopes
       const clientId = "47d9e6f3d4364d13bc1a0572ed81a078";
-      const redirectUri = "https://namanagar.github.io/festival-recs/"; //"http://localhost:8080/";
+      const redirectUri = "http://localhost:8080/"; //"https://namanagar.github.io/festival-recs/"; //
       const scopes = ["user-top-read user-read-private user-read-email"];
       // If there is no token, redirect to Spotify authorization
       if (!this._token) {
@@ -191,6 +192,44 @@ export default {
             console.log("error: " + error);
           }
         );
+      await axios
+        .get(`https://api.spotify.com/v1/me/top/artists?limit=50&time_range=long_term`, {
+          headers: {
+            Authorization: "Bearer " + this._token
+          }
+        })
+        .then(
+          response => {
+            response.data.items.forEach(element => {
+              var obj = { id: element.id, name: element.name };
+              if (!this.topArtists.includes(obj)){
+                this.topArtists.push(obj);
+              }
+            });
+          },
+          error => {
+            console.log("error: " + error);
+          }
+        );
+      await axios
+        .get(`https://api.spotify.com/v1/me/top/artists?limit=50&time_range=short_term`, {
+          headers: {
+            Authorization: "Bearer " + this._token
+          }
+        })
+        .then(
+          response => {
+            response.data.items.forEach(element => {
+              var obj = { id: element.id, name: element.name };
+              if (!this.topArtists.includes(obj)){
+                this.topArtists.push(obj);
+              }
+            });
+          },
+          error => {
+            console.log("error: " + error);
+          }
+        );
     },
     findGuarantees() {
       var myFest = this.fest;
@@ -206,8 +245,8 @@ export default {
       });
       return matches;
     },
-    async getRelatedArtists(topArtists) {
-      var artistIDs = topArtists.map(el => el.id);
+    async getRelatedArtists(artists) {
+      var artistIDs = artists.map(el => el.id);
       for (var i = 0; i < artistIDs.length; i++) {
         await axios
           .get(
@@ -224,7 +263,7 @@ export default {
             response => {
               //console.log(response.data);
               response.data.artists.forEach(element => {
-                this.relatedArtists.push(element.name);
+                  this.relatedArtists.push(element.name);
               });
             },
             error => {
@@ -298,8 +337,10 @@ export default {
     },
     async generate() {
       this.loading = true;
+      // get users' already top artists in the lineup
       await this.getTopArtists();
       this.guarantees = this.findGuarantees();
+      //get recommendations from their top artists
       await this.getRelatedArtists(this.topArtists);
       this.buildMap();
       this.loading = false;
