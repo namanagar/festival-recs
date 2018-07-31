@@ -82,7 +82,7 @@
         </div>
       </div>
     </div>
-    <div v-if="this.user != null && loading == false && guarantees.length + freqMap.length < 10">
+    <div v-if="this.user != null && loading == false && guarantees.length + freqMap.length < 10 && guarantees.length + freqMap.length > 0">
       <div class="row extra-padded">
         <div class="col-sm-12 col-md-12">
           <h6>Seems like your music taste (according to Spotify) isn't that compatible with {{ this.fest }}'s lineup, sorry!</h6>
